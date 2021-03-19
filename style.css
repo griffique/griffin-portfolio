@@ -3,7 +3,12 @@
   --secondary-color: #edfaf9;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-
+.app-showcase a {
+  display: block;
+}
+.about-paragraphs a {
+  display: inline;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -123,4 +128,25 @@ img {
   border: 10px solid white;
   box-shadow: var(--box-shadow);
   margin: 5px;
+}
+
+@media (max-width: 576px) {
+  a {
+    display: block;
+    text-align: center;
+  }
+
+  .app-showcase img {
+    display: none;
+  }
+
+  .light-background {
+    background: white;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
 }

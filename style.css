@@ -43,6 +43,20 @@ p {
 .app-showcase p {
   text-align: left;
 }
+.fab {
+  margin: 20px;
+  font-size: 18px;
+  color: var(--primary-color);
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+.fab:hover {
+  color: white;
+}
+.email-link {
+  margin: 0 0 100px 0;
+}
 
 .navigation-links {
   display: flex;

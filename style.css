@@ -14,7 +14,7 @@
 /*sitewide*/
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Josefin Slab", serif;
   overflow-x: hidden;
 }
 
@@ -49,7 +49,7 @@ p {
 .initial {
   text-align: center;
   margin: 0 auto;
-  font-size: 200px;
+  font-size: 300px;
   font-weight: bold;
   color: var(--accent-color);
 }

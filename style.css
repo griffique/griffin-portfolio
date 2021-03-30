@@ -15,7 +15,6 @@
 
 body {
   font-family: "Josefin Slab", serif;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -62,6 +61,7 @@ p {
   padding: 75px;
   background-image: url(images/watercolor.jpg);
   background-size: cover;
+  max-width: 100%;
 }
 .page-header .col-sm-6 {
   margin: 50px 0 0;
@@ -145,13 +145,14 @@ p {
   text-align: center;
   font-size: 18px;
 }
-.contact-link,
-.app-link {
+
+.app-link,
+.portfolio-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
-.contact-link:hover,
+.portfolio-link:hover,
 .app-link:hover {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -221,5 +222,8 @@ p {
 
   .light-background {
     background: white;
+  }
+  .page-header {
+    text-align: center;
   }
 }

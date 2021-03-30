@@ -79,10 +79,10 @@ p {
   margin: 5px;
 }
 .about-paragraphs {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   margin: 10px;
-  text-align: center;
+  text-align: left;
 }
 .about-paragraphs a {
   display: inline;
@@ -102,6 +102,15 @@ p {
 #contact {
   text-align: center;
   margin: 50px 0 0;
+}
+
+.profile-pic-container img {
+  border-radius: 50%;
+  max-width: 400px;
+  max-height: 400px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow);
 }
 
 /*font awesome*/
@@ -183,6 +192,7 @@ p {
 }
 .app-showcase .col-sm-6 {
   padding: 20px;
+  text-align: center;
 }
 .app-showcase p {
   text-align: left;
@@ -204,6 +214,9 @@ p {
   }
   .app-showcase img {
     display: none;
+  }
+  .initial {
+    font-size: 200px;
   }
 
   .light-background {

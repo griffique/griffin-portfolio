@@ -1,28 +1,23 @@
 :root {
-  --primary-color: #01adc1;
-  --secondary-color: #e9fdff;
+  --primary-color: #2c8fba;
+  --secondary-color: #d2eaec;
+  --accent-color: #6ed0e0;
+  --contrast-color: #5c6c94;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-.app-showcase a {
-  display: block;
+/*Bootstrap navbar*/
+.navbar {
+  padding: 10px 32px;
 }
-.about-paragraphs a {
-  display: inline;
-}
+
+/*sitewide*/
+
 body {
   font-family: "Roboto", sans-serif;
 }
-.container {
-  margin: 31px auto;
-}
-
-.page-header {
-  text-align: center;
-  margin: 100px 0 0;
-}
 
 h1 {
-  font-size: 96px;
+  font-size: 82px;
 }
 
 h2 {
@@ -33,6 +28,10 @@ h3 {
   font-size: 24px;
   opacity: 0.7;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 p {
   padding: 20px;
@@ -40,9 +39,46 @@ p {
   font-size: 18px;
   line-height: 1.5;
 }
-.app-showcase p {
-  text-align: left;
+.container {
+  padding: 31px auto;
 }
+.light-background {
+  background: var(--secondary-color);
+}
+.page-header {
+  text-align: left;
+  padding: 75px;
+  background-image: url(images/watercolor.jpg);
+  background-size: cover;
+}
+.page-header .col-sm-6 {
+  margin: 50px 0 0;
+}
+.row {
+  height: auto;
+}
+
+/*about*/
+.about-images img {
+  border: 10px solid white;
+  box-shadow: var(--box-shadow);
+  margin: 5px;
+}
+.about-paragraphs {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px;
+  text-align: center;
+}
+.about-paragraphs a {
+  display: inline;
+}
+
+#contact {
+  text-align: center;
+}
+
+/*font awesome*/
 .fab {
   margin: 20px;
   font-size: 18px;
@@ -54,42 +90,12 @@ p {
 .fab:hover {
   color: white;
 }
-.email-link {
-  margin: 0 0 100px 0;
-}
 
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
-}
-.navbar {
-  padding: 10px 32px;
-}
-
-.navigation-links a {
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.contact-link,
-.app-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-.contact-link:hover,
-.app-link:hover {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  background: white;
-}
+/*links*/
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+  background-color: white;
 }
 .about-link:hover {
   background: var(--primary-color);
@@ -104,32 +110,17 @@ p {
   text-align: center;
   font-size: 18px;
 }
-.row {
-  margin: 50px;
-  height: auto;
+.contact-link,
+.app-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
 }
-.col-sm-6 {
-  padding: 20px;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.homepage-link {
+.contact-link:hover,
+.app-link:hover {
   color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
-.about-paragraphs {
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 10px;
-  text-align: center;
-}
-#contact {
-  text-align: center;
+  border: 1px solid var(--primary-color);
+  background: white;
 }
 .email-link {
   display: flex;
@@ -137,21 +128,37 @@ img {
   color: var(--primary-color);
   font-size: 28px;
   text-decoration: none;
+  margin: 0 0 100px 0;
 }
 
 .email-link:hover {
   text-decoration: underline;
 }
 
-.light-background {
-  background: var(--secondary-color);
+.navigation-links {
+  display: flex;
+  margin-top: 20px;
+  justify-content: left;
+}
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+/*portfolio*/
+.app-showcase a {
+  display: block;
+}
+.app-showcase .col-sm-6 {
+  padding: 20px;
+}
+.app-showcase p {
+  text-align: left;
 }
 
-.images img {
-  border: 10px solid white;
-  box-shadow: var(--box-shadow);
-  margin: 5px;
-}
+/*CSS media queries*/
 
 @media (max-width: 576px) {
   a {
@@ -159,17 +166,17 @@ img {
     text-align: center;
   }
 
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
   .app-showcase img {
     display: none;
   }
 
   .light-background {
     background: white;
-  }
-  h1 {
-    font-size: 48px;
-  }
-  h2 {
-    font-size: 32px;
   }
 }

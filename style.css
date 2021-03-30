@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #2c8fba;
-  --secondary-color: #d2eaec;
+  --primary-color: #116798;
+  --secondary-color: #e9fdfe;
   --accent-color: #6ed0e0;
   --contrast-color: #5c6c94;
 
@@ -50,6 +50,8 @@ p {
   text-align: center;
   margin: 0 auto;
   font-size: 200px;
+  font-weight: bold;
+  color: var(--accent-color);
 }
 .light-background {
   background: var(--secondary-color);
@@ -83,6 +85,17 @@ p {
 }
 .about-paragraphs a {
   display: inline;
+}
+.coded-by {
+  display: block;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  font-style: italic;
+  color: var(--accent-color);
+  margin: 50px 0 0;
+  padding: 20px;
+  background-color: var(--secondary-color);
 }
 
 #contact {
@@ -140,7 +153,7 @@ p {
   color: var(--primary-color);
   font-size: 18px;
   text-decoration: none;
-  margin: 0 0 100px 0;
+  margin: 0 0 10px 0;
 }
 
 .email-link:hover {

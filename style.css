@@ -32,6 +32,7 @@ h3 {
   font-size: 24px;
   opacity: 0.7;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -77,11 +78,7 @@ p {
 }
 
 /*about*/
-.about-images img {
-  border: 10px solid white;
-  box-shadow: var(--box-shadow);
-  margin: 5px;
-}
+
 .about-paragraphs {
   font-size: 20px;
   line-height: 1.5;
@@ -90,6 +87,10 @@ p {
 }
 .about-paragraphs a {
   display: inline;
+}
+.album-cover img {
+  width: 400px;
+  height: 400px;
 }
 .coded-by {
   display: block;
@@ -107,7 +108,11 @@ p {
   text-align: center;
   margin: 50px 0 0;
 }
-
+.other-interests {
+  text-align: center;
+  padding: 40px;
+  background-color: var(--secondary-color);
+}
 .profile-pic-container img {
   border-radius: 50%;
   max-width: 400px;
@@ -115,6 +120,8 @@ p {
   display: block;
   margin: 0 auto;
   box-shadow: var(--box-shadow);
+  position: relative;
+  top: 75px;
 }
 
 /*font awesome*/
@@ -192,6 +199,9 @@ p {
   text-transform: capitalize;
 }
 /*portfolio*/
+.app-showcase {
+  margin: 50px 0 0;
+}
 .app-showcase a {
   display: block;
 }
@@ -232,5 +242,7 @@ p {
   }
   .profile-pic-container img {
     max-width: 50%;
+    position: relative;
+    top: 0px;
   }
 }

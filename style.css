@@ -78,8 +78,7 @@ p {
   background-size: cover;
   max-width: 100%;
 }
-.page-header .col-sm-6,
-.col-sm-8 {
+.page-header .col-sm-6 {
   margin: 50px 0 0;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 50px;
@@ -90,11 +89,22 @@ p {
 }
 
 /*about*/
-
+.about-page-header {
+  text-align: left;
+  padding: 25px;
+  background-image: url(images/watercolor.jpg);
+  background-size: cover;
+  max-width: 100%;
+}
+.about-container {
+  margin-top: 75px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .about-paragraphs {
   font-size: 20px;
   line-height: 1.5;
-  margin: 10px;
+
   text-align: left;
 }
 .about-paragraphs a {
@@ -127,13 +137,13 @@ p {
 }
 .profile-pic-container img {
   border-radius: 50%;
-  max-width: 400px;
-  max-height: 400px;
-  display: block;
-  margin: 0 auto;
+  max-width: 100px;
+  max-height: 100px;
+
+  margin: 75px auto 50px;
   box-shadow: var(--box-shadow);
-  position: relative;
-  top: 75px;
+  display: relative;
+  top: -50px;
 }
 
 /*font awesome*/
@@ -231,12 +241,23 @@ p {
     text-align: center;
   }
 
-  h1 {
+  h1,
+  .portfolio-title {
     font-size: 48px;
   }
   h2 {
     font-size: 32px;
   }
+  .about-page-header {
+    margin: 0 auto;
+  }
+
+  .about-paragraphs {
+    font-size: 18px;
+    padding: 0px;
+    text-align: center;
+  }
+
   .app-showcase img {
     display: none;
   }
@@ -247,6 +268,9 @@ p {
   .light-background {
     background: white;
   }
+  .middle-col {
+    margin-top: 50px;
+  }
   .page-header {
     text-align: center;
   }
@@ -254,5 +278,6 @@ p {
     max-width: 50%;
     position: relative;
     top: 0px;
+    margin: 100px auto 0;
   }
 }

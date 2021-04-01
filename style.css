@@ -2,7 +2,7 @@
   --primary-color: #116798;
   --secondary-color: #e9fdfe;
   --accent-color: #6ed0e0;
-  --contrast-color: #5c6c94;
+  --contrast-color: #7a49a5;
 
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -43,6 +43,18 @@ p {
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
+}
+.default-link {
+  color: var(--contrast-color);
+
+  text-decoration: none;
+}
+.default-link:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+.default-link:visited {
+  color: var(--primary-color);
 }
 .container {
   padding: 31px auto;
@@ -172,18 +184,10 @@ p {
 .email-link {
   display: flex;
   justify-content: center;
-  color: var(--primary-color);
-  font-size: 18px;
-  text-decoration: none;
-  margin: 0 0 10px 0;
-}
 
-.email-link:hover {
-  text-decoration: underline;
-  color: #6ed0e0;
-}
-.email-link:visited {
-  color: #5c6c94;
+  font-size: 18px;
+
+  margin: 0 0 10px 0;
 }
 
 .navigation-links {
@@ -211,6 +215,12 @@ p {
 }
 .app-showcase p {
   text-align: left;
+}
+.portfolio-title {
+  text-align: center;
+  font-size: 60px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 50px;
 }
 
 /*CSS media queries*/
